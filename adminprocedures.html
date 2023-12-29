@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Emergency Protocols</title>
+  <style>
+    /* Styles for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .protocol {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .code {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .description {
+      margin-bottom: 10px;
+    }
+    .details {
+      font-style: italic;
+      color: #888;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Admin Emergency Protocols</h1>
+  
+  <div class="protocol">
+    <div class="code">Code Blue - Normal Protocol</div>
+    <div class="description">Indicates regular functioning. All activities permitted.</div>
+    <div class="details">
+      <p>Download Scanner: OFF</p>
+      <p>Download logger remains on</p>
+      <p>Server User Scan: 1m</p>
+      <p>Code Number: 1</p>
+    </div>
+  </div>
+
+  <div class="protocol">
+    <div class="code">Code Green - Server Scanning Protocol</div>
+    <div class="description">Heightened alert for suspicious activity. Normal activities permitted.</div>
+    <div class="details">
+      <p>Download Scanner: ON</p>
+      <p>Download logger remains on</p>
+      <p>Server User Scan: 30s</p>
+      <p>Code Number: 2</p>
+    </div>
+  </div>
+
+  <div class="protocol">
+    <div class="code">Code Yellow - Unauthorized Access Attempt</div>
+    <div class="description">Indicates an attempt to breach server access.</div>
+    <div class="details">
+      <p>Download Scanner: ON</p>
+      <p>Download logger remains on</p>
+      <p>Outside Firewall: ON until Code Yellow or below</p>
+      <p>Main Logs: Normal To Debug. Change back when yellow or below</p>
+      <p>Server User Scan: 15s</p>
+      <p>Code Number: 3</p>
+    </div>
+  </div>
+
+  <div class="protocol">
+    <div class="code">Code Red - Intrusion Detected</div>
+    <div class="description">Confirmation of unauthorized presence within the servers.</div>
+    <div class="details">
+      <p>Download Scanner: ON</p>
+      <p>Download logger remains on</p>
+      <p>Outside Firewall: ON until Code Yellow or below</p>
+      <p>Inside Firewall: ON until Code Red or below</p>
+      <p>Main Logs: Normal/Debug To Error. Change back when red or below</p>
+      <p>Server User Scan: 5s</p>
+      <p>Code Number: 4</p>
+    </div>
+  </div>
+
+  <div class="protocol">
+    <div class="code">Code Black - Complete Takeover</div>
+    <div class="description">Servers compromised, total loss of control.</div>
+    <div class="details">
+      <p>Download Scanner: ON</p>
+      <p>Download logger remains on</p>
+      <p>Outside Firewall: ON until Code Yellow or below</p>
+      <p>Inside Firewall: ON until Code Red or below</p>
+      <p>Bunker Firewall: ON</p>
+      <p>Main Logs: Normal/Debug/Error To Fatal Error. Change back when red or below</p>
+      <p>Announce Code Black</p>
+      <p>Declare an Emergency</p>
+      <p>Server User Scan: 1s</p>
+      <p>Code Number: 5</p>
+    </div>
+  </div>
+</body>
+</html>
